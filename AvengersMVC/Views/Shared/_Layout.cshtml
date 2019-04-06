@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Avengers Fun Clup</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="conteiner">
+        <img src="~/Content/images/logo.png" />
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Series</a>
+                </li>
+                <li>
+                    <a href="#">Characters</a>
+                </li>
+
+                <li style="float:right;">
+                    <a href="#">Login </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="footer">
+
+            <p>Copyright eng</p>
+
+        </div>
+        @RenderBody()
+    </div>
+   
+</body>
+</html>
