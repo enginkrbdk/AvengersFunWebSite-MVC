@@ -94,10 +94,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Characters\black-widow.jpg" />
+    <Content Include="Content\Characters\Hulk.jpg" />
     <Content Include="Content\Characters\iron-man.jpg" />
+    <Content Include="Content\Characters\thor.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\movies\avengers1.jpg" />
     <Content Include="Content\Style.css" />
     <Content Include="Content\Style2.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -135,6 +140,7 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Character\Index.cshtml" />
     <Content Include="Views\Character\Detail.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904061322376_kurulum.resx">
