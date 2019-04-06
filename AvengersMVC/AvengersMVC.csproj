@@ -131,6 +131,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Character\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,7 +142,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Characters\" />
-    <Folder Include="Views\Character\" />
     <Folder Include="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
