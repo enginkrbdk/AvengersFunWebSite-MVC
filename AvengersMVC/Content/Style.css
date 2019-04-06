@@ -4,10 +4,16 @@
     font-family:sans-serif;
 
 }
-.conteiner {
+.conteiner1 {
 text-align:center;
-width:100%;
+width:85%;
 border:1px solid yellow;
+margin-left:100px;
+padding:20px;
+}
+p{
+
+    color:white;
 
 }
 ul {
@@ -35,11 +41,16 @@ li {
         }
 
 .footer {
-    position: fixed;
+    /*position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0;*/
     width: 100%;
   
     color: white;
     text-align: center;
+}
+.main {
+    text-align: center;
+    margin:20px;
+    padding: 20px;
 }

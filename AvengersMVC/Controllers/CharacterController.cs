@@ -13,5 +13,10 @@ namespace AvengersMVC.Controllers
         {
             return View();
         }
+
+        public ActionResult Detail()
+        {
+            return View();
+        }
     }
 }

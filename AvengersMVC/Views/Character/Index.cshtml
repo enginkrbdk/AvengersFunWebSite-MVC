@@ -4,147 +4,79 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<!--
-    instagram: www.instagram.com/programmingtutorial
-    site: programlamadersleri.net
--->
-<section id="blog">
-    <div class="container">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column img {
+            width: 125px;
+            height: 150px;
+        }
+    </style>
+</head>
+<link href="~/Content/Style.css" rel="stylesheet" />
+
+<div class="main">
+    
+    <p>  KAraktertlaer burfdasdasdasd sdf asdfasdfg asdfg   </p>
+
+     
 
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 text-center">
-                <h2>
-                    <span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span>
-                </h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+            <div class="column" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+
+                <img src="~/Content/Characters/iron-man.jpg" />
+                <p>Some text..</p>
+                <a href="/Character/Detail">See Detail</a>
+
+
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h2>Column 2</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some text..</p>
             </div>
         </div>
 
-        <div class="row">
-
-            <div id="slider" class="carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators">
-                    <li data-target="#slider" data-slide-to="0" class="active"></li>
-                    <li data-target="#slider" data-slide-to="1"></li>
-                </ol>
 
 
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-
-                    <div class="item active">
-                        <div class="row">
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- row -->
-                    </div> <!-- item -->
-
-                    <div class="item">
-                        <div class="row">
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Post Title</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                        <a class="btn btn-default" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <!-- row -->
-                    </div> <!-- item -->
 
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
+</div>

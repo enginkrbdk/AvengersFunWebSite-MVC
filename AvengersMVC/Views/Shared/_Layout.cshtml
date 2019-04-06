@@ -13,19 +13,19 @@
     <link href="~/Content/Style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="conteiner">
+    <div class="conteiner1">
         <img src="~/Content/images/logo.png" />
 
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/Default/Index">Home</a>
                 </li>
                 <li>
                     <a href="#">Series</a>
                 </li>
                 <li>
-                    <a href="#">Characters</a>
+                    <a href="/Character/Index/">Characters</a>
                 </li>
 
                 <li style="float:right;">
@@ -33,14 +33,14 @@
                 </li>
             </ul>
         </nav>
-
+        @RenderBody()
 
         <div class="footer">
 
             <p>Copyright eng</p>
 
         </div>
-        @RenderBody()
+
     </div>
    
 </body>
