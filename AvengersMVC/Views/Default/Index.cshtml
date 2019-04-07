@@ -4,11 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
 <span style="color:white;">
-    {
-        <p>@item.Title</p>
-        <p>@item.Description</p>
-
-    }</span>
     @foreach (var item in ViewBag.List)
+    {
+        <h2>@item.Title</h2>
+      
+        <p>@item.Description</p>
+       
+    }
+
+</span>

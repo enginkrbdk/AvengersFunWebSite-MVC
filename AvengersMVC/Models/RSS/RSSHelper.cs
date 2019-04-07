@@ -8,60 +8,52 @@ namespace AvengersMVC.Models.RSS
 {
     public class RSSHelper
     {
+       //   string html = @"https://www.ranker.com/list/avengers-trivia-facts/ranker-comics";
+       
 
-        string url = "https://www.inverse.com/article/44332-avengers-infinity-war-6-deleted-scenes-trailers";
-
-        public static async void ReadList(string url)
+        public static List<RssItem> ReadList(string url)
         {
           
             List<RssItem> list = new List<RssItem>();
-            //try
-            //{
-            //    XPathDocument doc = new XPathDocument(url);
-            //    XPathNavigator navigator = doc.CreateNavigator();
-            //    XPathNodeIterator nodes = navigator.Select("//item");
-            //    while (nodes.MoveNext())
-            //    {
-            //        XPathNavigator node = nodes.Current;
-            //        list.Add(new RssItem
-            //        {
-            //            Title = node.SelectSingleNode("title").Value,
-            //            Description = node.SelectSingleNode("description").Value,
-            //            Category = node.SelectSingleNode("category").Value,
-            //            Link = node.SelectSingleNode("link").Value,
-            //            PubDate = node.SelectSingleNode("pubDate").Value
-
-
-
-
-            //        });
-
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    list = null;
-            //}
-            var html = @"https://www.ranker.com/list/avengers-trivia-facts/ranker-comics";
-
+    
+         
+             RssItem r = new RssItem();
             HtmlWeb web = new HtmlWeb();
 
-            var htmlDoc = web.Load(html);
+            var htmlDoc = web.Load(url);
 
-            var p = htmlDoc.DocumentNode.SelectSingleNode("//div/h2");
-          	var node = htmlDoc.DocumentNode.SelectSingleNode("//section/h2");
-            var img = htmlDoc.DocumentNode.SelectSingleNode("//div/figure/img");
-            RssItem r = new RssItem();
-            r.Link = img.OuterHtml;
-            r.Description = p.InnerText;
-        
-     
+            //var h = htmlDoc.DocumentNode.SelectSingleNode("//div/h2");
+            //var p = htmlDoc.DocumentNode.SelectSingleNode("//div/p");
+            //var img = htmlDoc.DocumentNode.SelectSingleNode("//div/figure/img");
+
+            var htmlNodes = htmlDoc.DocumentNode.SelectNodes("//div/h2");
+
+            foreach (var node in htmlNodes)
+            {
+
+                r.Title = node.InnerText;
+            }
+
+            var p = htmlDoc.DocumentNode.SelectNodes("//div/p");
+
+            foreach (var node in htmlNodes)
+            {
+
+                r.Description  = node.InnerText;list.Add(r);
+            }
+
+
+
+            // = h.InnerText;
+          
+
+            
+            return list;
         }
+      
     }
-
+  
 
 
 }
-    }
-}
+
