@@ -2,7 +2,7 @@
 
 namespace AvengersMVC.Models
 {
-    internal class ForeingKeyAttribute : Attribute
+   public class ForeingKeyAttribute : Attribute
     {
     }
 }

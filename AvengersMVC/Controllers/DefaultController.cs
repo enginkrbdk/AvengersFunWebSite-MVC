@@ -13,11 +13,12 @@ namespace AvengersMVC.Controllers
         public ActionResult Index()
         {
 
-            string url2 = "https://www.marvel.com/podcasts/10/this_week_in_marvel/rss";
+            //string url2 = "https://www.marvel.com/podcasts/10/this_week_in_marvel/rss";
 
 
-         // string url = "https://www.marvel.com/podcasts/10/this_week_in_marvel/rss";
-            ViewBag.List = RSSHelper.ReadList(url2);
+            //// string url = "https://www.marvel.com/podcasts/10/this_week_in_marvel/rss";
+            //var lsite = RSSHelper.ReadList(url2);
+            //ViewBag.List =
 
             return View();
         }

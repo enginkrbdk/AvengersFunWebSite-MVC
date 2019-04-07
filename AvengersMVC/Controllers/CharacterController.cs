@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvengersMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,15 +9,22 @@ namespace AvengersMVC.Controllers
 {
     public class CharacterController : Controller
     {
-        // GET: Character
+        AvengersContext db = new AvengersContext();
         public ActionResult Index()
         {
-            return View();
+            List<Character> liste = (from c in db.Characters
+                                 orderby c.Age descending
+                                 select c)
+                                 .ToList();
+      
+            return View(liste);
         }
 
-        public ActionResult Detail()
+        public ActionResult Detail(int id)
         {
-            return View();
+            Character c = db.Characters.Find(id);
+
+            return View(c);
         }
     }
 }

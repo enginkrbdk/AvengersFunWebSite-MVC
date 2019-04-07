@@ -1,8 +1,21 @@
-﻿
+﻿@using AvengersMVC.Models
+@model Character
 @{
     ViewBag.Title = "Detail";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
 
-<h2>Detail</h2>
+  span img{
+        width:200px;
+        height:300px;
 
+    }
+</style>
+<span>
+    <h2>@Model.Name  (@Model.Age)</h2>
+
+    <img src="~/Content/Characters/@Model.ImageUrl" />
+    <h2>@Model.CharacterName</h2>
+    <p>@Model.Description</p>
+</span>
