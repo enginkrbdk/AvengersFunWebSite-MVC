@@ -17,7 +17,6 @@ namespace AvengersMVC.Models.RSS
             List<RssItem> list = new List<RssItem>();
     
          
-             RssItem r = new RssItem();
             HtmlWeb web = new HtmlWeb();
 
             var htmlDoc = web.Load(url);
@@ -30,7 +29,7 @@ namespace AvengersMVC.Models.RSS
 
             foreach (var node in htmlNodes)
             {
-
+                  RssItem r = new RssItem();
                 r.Title = node.InnerText;
             }
 
@@ -38,7 +37,7 @@ namespace AvengersMVC.Models.RSS
 
             foreach (var node in htmlNodes)
             {
-
+                  RssItem r = new RssItem();
                 r.Description  = node.InnerText;list.Add(r);
             }
 
