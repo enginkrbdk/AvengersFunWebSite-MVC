@@ -31,6 +31,7 @@ namespace AvengersMVC.Models.RSS
             {
                   RssItem r = new RssItem();
                 r.Title = node.InnerText;
+                list.Add(r);
             }
 
             var p = htmlDoc.DocumentNode.SelectNodes("//div/p");
@@ -38,7 +39,8 @@ namespace AvengersMVC.Models.RSS
             foreach (var node in htmlNodes)
             {
                   RssItem r = new RssItem();
-                r.Description  = node.InnerText;list.Add(r);
+                r.Description  = node.InnerText;
+                list.Add(r);
             }
 
 

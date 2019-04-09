@@ -24,16 +24,18 @@ namespace AvengersMVC.Controllers
             if (user != null)
             {
 
-                return View("/Default/Index");
+
+                return RedirectToAction("Index", "Default");
+
 
             }
             else
             {
                 ViewBag.Error = "User is not found! Please Register";
 
-
+               // RedirectToAction("Default", "Index");
             }
-            return View("/Default/Index/");
+            return View();
         }
 
 
