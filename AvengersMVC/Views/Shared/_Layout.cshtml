@@ -18,21 +18,32 @@
 
         <nav>
             <ul>
+
                 <li>
                     <a href="/Default/Index">Home</a>
                 </li>
-                <li>
-                    <a href="/Movies/Index">Series</a>
-                  
-                        <li>
-                            <a href="/Character/Index/">Characters</a>
-                        </li>
+                @if (Session["uname"] != null)
+                {
+                    <li>
+                        <a href="/Movies/Index">Series</a>
+                    </li>
+                    <li>
+                        <a href="/Character/Index/">Characters</a>
+                    </li>
+                    <li style="float:right;">
+                        <a href="/User/Login">Exit</a>
 
-                        <li style="float:right;">
-                            <a href="/User/Login">Login </a>
-                        </li>
-                    </ul>
-</nav>
+                    </li>}
+                @if (Session["uname"] == null)
+                {
+                    <li style="float:right;">
+                        <a href="/User/Login">Login </a>
+                    </li>}
+
+
+
+            </ul>
+        </nav>
         @RenderBody()
 
         <div class="footer">
@@ -42,6 +53,6 @@
         </div>
 
     </div>
-   
+
 </body>
 </html>

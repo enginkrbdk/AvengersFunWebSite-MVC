@@ -14,12 +14,18 @@ namespace AvengersMVC.Controllers
         [HttpGet]
         public ActionResult Login()
         {
+            if (Session["uname"] != null)
+            {
+                Session.Remove("uname");
+
+            }
             return View();
         }
 
         [HttpPost]
         public ActionResult Login(string uname, string password)
         {
+            Session["uname"] = uname;
             var user = db.Users.FirstOrDefault(x => x.UserName == uname && x.Password == password);
             if (user != null)
             {
@@ -70,6 +76,8 @@ namespace AvengersMVC.Controllers
             return View();
 
         }
+   
+
 
     }
 }
