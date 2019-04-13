@@ -1,9 +1,9 @@
 ﻿body {
     background: #000 !important;
 }
-
+/*#28a745*/
 .card {
-    border: 1px solid #28a745;
+    border: 1px solid #ffc107;
 }
 
 .card-login {
@@ -61,7 +61,7 @@ input:focus {
     color: #28a745;
     background-color: transparent;
     background-clip: padding-box;
-    border: 1px solid #28a745;
+    border: 1px solid #ffc107;
     border-radius: 0;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -80,6 +80,6 @@ input:focus {
     text-align: center;
     white-space: nowrap;
     background-color: #e9ecef;
-    border: 1px solid #ced4da;
+    border: 1px solid #ffc107;
     border-radius: 0;
 }

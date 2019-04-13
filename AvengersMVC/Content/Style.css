@@ -17,8 +17,9 @@ ul {
     list-style-type: none;
     margin: auto;
     padding: auto;
-    overflow:hidden;
+    overflow: hidden;
     background-color: #333;
+    border: 1px solid yellow;
 }
 
 li {
@@ -50,4 +51,7 @@ li {
     text-align: center;
     margin:20px;
     padding: 20px;
+}
+.nav {
+    border: 1px solid #ffc107;
 }

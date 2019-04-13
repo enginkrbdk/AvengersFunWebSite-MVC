@@ -16,7 +16,8 @@ namespace AvengersMVC.Controllers
         {
             if (Session["uname"] != null)
             {
-                Session.Remove("uname");
+
+               Session.Remove("uname");
 
             }
             return View();
@@ -26,7 +27,10 @@ namespace AvengersMVC.Controllers
         public ActionResult Login(string uname, string password)
         {
             Session["uname"] = uname;
+            
             var user = db.Users.FirstOrDefault(x => x.UserName == uname && x.Password == password);
+            Session["id"] = user.Id;
+
             if (user != null)
             {
 
